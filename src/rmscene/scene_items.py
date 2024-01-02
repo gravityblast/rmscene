@@ -2,15 +2,13 @@
 
 from dataclasses import dataclass, field
 import enum
-import logging
+from logger import _logger
 import typing as tp
 
 from .tagged_block_common import CrdtId, LwwValue
 from .crdt_sequence import CrdtSequence
 from .text import expand_text_items
 
-
-_logger = logging.getLogger(__name__)
 
 
 ## Base class

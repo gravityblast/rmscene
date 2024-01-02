@@ -6,6 +6,18 @@ In particular, this version introduces the ability to include text as well as dr
 
 To convert rm files to other formats, you can use [rmc](https://github.com/ricklupton/rmc), which combines this library with code for converting lines to SVG, PDF, and simple Markdown.
 
+## Setup
+
+```
+poetry install
+```
+
+## Usage
+
+```
+poetry run rmscene /path/to/page-file.rm
+```
+
 ## Changelog
 
 ### Unreleased
@@ -31,7 +43,7 @@ New features:
 - New methods `read_bool_optional` and similar of `TaggedBlockReader`
   which return a default value if no matching tagged value is present
   in the block.
-  
+
 Other changes and fixes:
 - The `value` attribute of scene item blocks, which was not being used, has been
   removed.
@@ -51,7 +63,7 @@ Breaking changes:
   by passing `{"version": "3.2.2"}` options to `write_blocks`. This allows us to
   continue to test round-trip reading and writing of old test files as new data
   values are added. Replaces `"line_version"` option.
-  
+
 New features:
 - Parse text formatting information (bold and italic) introduced in reMarkable
   software version 3.3.

@@ -9,12 +9,9 @@ from contextlib import contextmanager
 from dataclasses import dataclass
 from io import BytesIO
 import enum
-import logging
+from logger import _logger
 import struct
 import typing as tp
-
-
-_logger = logging.getLogger(__name__)
 
 
 HEADER_V6 = b"reMarkable .lines file, version=6          "

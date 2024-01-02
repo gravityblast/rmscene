@@ -10,7 +10,7 @@ from __future__ import annotations
 from collections.abc import Iterator
 from contextlib import contextmanager
 from io import BytesIO
-import logging
+from logger import _logger
 import typing as tp
 
 from .tagged_block_common import (
@@ -21,8 +21,6 @@ from .tagged_block_common import (
     UnexpectedBlockError,
 )
 
-
-_logger = logging.getLogger(__name__)
 
 
 class TaggedBlockWriter:

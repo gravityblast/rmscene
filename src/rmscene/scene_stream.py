@@ -11,7 +11,7 @@ from collections.abc import Iterable, Iterator
 import math
 from uuid import UUID, uuid4
 from dataclasses import dataclass, replace, KW_ONLY
-import logging
+from logger import _logger
 import typing as tp
 
 from packaging.version import Version
@@ -22,9 +22,6 @@ from .tagged_block_writer import TaggedBlockWriter
 from .crdt_sequence import CrdtSequence, CrdtSequenceItem
 from .scene_tree import SceneTree
 from . import scene_items as si
-
-_logger = logging.getLogger(__name__)
-
 
 ############################################################
 # Top-level block types

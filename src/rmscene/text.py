@@ -7,14 +7,12 @@ from __future__ import annotations
 from collections.abc import Iterable
 from collections import defaultdict
 from dataclasses import dataclass, field
-import logging
+from logger import _logger
 import typing as tp
 
 from . import scene_items as si
 from .tagged_block_common import CrdtId, LwwValue
 from .crdt_sequence import CrdtSequence, CrdtSequenceItem
-
-_logger = logging.getLogger(__name__)
 
 
 def expand_text_item(

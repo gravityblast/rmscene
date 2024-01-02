@@ -17,3 +17,7 @@ hypothesis = "^6.68.2"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+rmscene = "rmscene.__main__:main"
+
